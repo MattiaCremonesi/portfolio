@@ -1,0 +1,71 @@
+body {
+    background-image: linear-gradient(to right, #eee4b9, #fcde8e);
+}
+
+.container_titolo {
+    border-color: black;
+    border-style: solid;
+    border-radius: 10px;
+    width: 400px;
+    height: auto;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: white;
+
+    /* Aggiunte per il posizionamento */
+    position: absolute;
+    top: 20px; /* Puoi regolare questa distanza in base alle tue esigenze */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.container_addprod {
+    border-color: black;
+    border-style: solid;
+    border-radius: 10px;
+    width: 400px;
+    height: 120px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: white;
+    /* Aggiunte per il posizionamento */
+    position: absolute;
+    top: calc(20px + 100px + 10px); /* 20px (distanza dall'alto del primo div) + altezza stimata del primo div + distanza tra i due div */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.container{
+    border-color: black;
+    border-style: solid ;
+    border-radius: 10px;
+    width: 400px;
+    height: auto;
+    margin : 175px auto;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: white;
+}
+
+.button{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    background-color: rgb(250, 216, 177); /* Green */
+    border : solid black;
+    border-radius: 10px;
+    color: black;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    width:200px;
+}
+.button5:hover {
+    background-color: rgb(146, 71, 0);
+    color: white;
+}
+

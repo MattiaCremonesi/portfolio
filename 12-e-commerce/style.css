@@ -1,0 +1,108 @@
+body{
+    background-image: linear-gradient(to right, #eee4b9 , #fcde8e);
+}
+.container_acquisto{
+    border-color: black;
+    border-style: solid ;
+    border-radius: 10px;
+
+    width: 400px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+    background-color: white;
+    display: flex;
+    align-items: center; /* Centra verticalmente il contenuto */
+}
+.container_titolo{
+    border-color: black;
+    border-style: solid ;
+    border-radius: 10px;
+
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+    background-color: white;
+    display: flex;
+    align-items: center; /* Centra verticalmente il contenuto */
+}
+.container_titolo h2 {
+    flex-grow: 1; /* Fai espandere il titolo per occupare lo spazio rimanente */
+}
+
+.container_titolo a {
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.container{
+    border-color: black;
+    border-style: solid ;
+    border-radius: 10px;
+
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+    height: auto;
+    margin-bottom: 10px;
+    background-color: white;
+}
+.container img{
+    width: 50%;
+}
+.main_container{
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+.table_carrello{
+    margin: auto;
+    text-align: left;
+}
+.table {
+    border-collapse: collapse;
+    width: auto;
+    margin: 20px;
+  }
+  .th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+.tabella_prodotti{
+    border-color: black;
+    border-style: solid ;
+    border-radius: 10px;
+
+    text-align: left;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+    background-color: aliceblue;
+
+}
+
+.button{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    background-color:  rgb(250, 216, 177);/* Green */
+    border : solid black;
+    border-radius: 10px;
+    color: black;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    width:200px;
+}
+.button5:hover {
+    background-color: rgb(146, 71, 0);
+    color: white;
+}
+
