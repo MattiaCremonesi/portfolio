@@ -1,0 +1,92 @@
+body{
+    background-image: linear-gradient(to right, #eee4b9 , #fcde8e);
+}
+.container_titolo {
+    border-color: black;
+    border-style: solid;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10px;
+}
+
+.container_titolo h2 {
+    flex-grow: 1;
+    text-align: center;
+    margin: 0; /* Rimuovi margini predefiniti */
+}
+
+.container_titolo a, 
+.container_titolo h4 {
+    flex-grow: 0;
+    margin: 0; /* Rimuovi margini predefiniti */
+}
+/* --------------------------------------------------------------------------------------------------------------------*/
+.main_container_utente{
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.container_utente{
+    border-color: black;
+    border-style: solid ;
+    border-radius: 10px;
+
+    width : auto;
+    height:auto;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+    height: auto;
+    margin-bottom: 10px;
+    background-color: white;
+}
+.container_acquisti{
+    border-color: black;
+    border-style: solid ;
+    border-radius: 10px;
+
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+    height: auto;
+    margin-bottom: 10px;
+    background-color: white;
+}
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 18px;
+    text-align: left;
+    
+}
+
+.styled-table thead tr {
+    background-color: rgb(146, 71, 0);
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid white;
+}
