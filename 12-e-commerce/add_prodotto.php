@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
   </head>
   <body>
-  <a href="index.php">Torna allo shop</a>
+  <a href="index.php">⬅️</a>
     <div class="container_titolo">
       <h2>Aggiungi prodotto</h2>
     </div>

@@ -46,12 +46,16 @@
                 $prodotto = $risultato_prodotto->fetch_assoc();
 
                 $somma_totale = $somma_totale + ($prodotto["prezzo"]*$row_prodotto["quantita"]);
-                echo "<div class='prodotto' style='width:300px;'>";
+                echo "<div class='prodotto container' style='width:300px;'>";
                 echo "<img src=".$prodotto["link_immagine"]."><br>";
                 echo "<h4>".$prodotto["nome"]."</h4>";
                 echo "<p>".$prodotto["descrizione"]."</p>";
                 echo "<p>".$prodotto["prezzo"]." €</p>";
-                echo "<p>".$row_prodotto["quantita"]." </p>";
+                echo "<p>Quantità: ".$row_prodotto["quantita"]." </p>";
+                echo "<form method='post' action='remove_prod.php'>";
+                echo "<input type='hidden' name='id_prodotto' value='".$prodotto["Id"]."'>";
+                echo "<button type='submit' class='button'>Rimuovi dal carrello</button>";
+                echo "</form>";
                 echo "</div>"; 
                 $controllo_carrello = 1;   
                      
@@ -80,7 +84,12 @@
           <?php
           echo "<input type='hidden' name='prezzo' value='".$somma_totale."'>";
           ?>
-          <a href='svuota_carrello.php'>Svuota carrello</a>
+          <a href='svuota_carrello.php'>Svuota carrello</a><br>
+          <?php
+              if (isset($_GET["q"])){
+                echo "<p style='color:red;'>Errore: mancanza di dati per l'acquisto</p>";
+              }
+            ?>
           <button type='submit' class='button button5'>Acquista</button>
           <br><br>
         </form>  

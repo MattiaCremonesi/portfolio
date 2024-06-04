@@ -15,7 +15,6 @@
         }
     
         $query = "INSERT INTO acquisto (id_utente, data_acquisto, metodo_pagamento, prezzo, numero_carta) VALUES ('".$id_utente."', '".$data_acquisto."', '".$metodo_pagamento."','".$prezzo."', '".$numero_carta."')";
-        echo $query;
         $stmt = $conn->prepare($query);
         $stmt->execute();
         $stmt->close();
@@ -24,13 +23,12 @@
         $conn->query($elimina_carrello);
     
         $conn->close();
-        echo "<script'>alert('Acquisto effettuato');</script>";
         header("Location: index.php");
         exit();
 
         
     } else {
-        header("Location: carrello.php");
+        header("Location: carrello.php?q='error'");
         exit();
     }
 ?>

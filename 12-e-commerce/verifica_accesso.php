@@ -17,13 +17,14 @@ if(isset($_POST['username']) && isset($_POST['password'])) {
         $row = $result->fetch_assoc();
         $_SESSION['username'] = $username; 
         $_SESSION['id_utente'] = $row['Id'];
+
+        $conn->close();
         header("Location: index.php");
         exit();
     } else {
-        echo "Username o password errati. Riprova.";
+        header("Location: accedi.php?q='error'");
+        exit();
     }
-
-    $conn->close();
 } else {
     header("Location: registrazione.php");
     exit();
